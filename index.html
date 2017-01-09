@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Should override IE compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Fit to device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Does the intranet search index pages? if so consider content -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Tab Title -->
+    <title>NRAA Ranges</title>
+
+    <!-- Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" rel="stylesheet"/>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <!-- Load ranges data from external .js file -->
+    <script src="ranges.js"></script>
+  </head>
+  <body>
+    <!-- Div for map -->
+    <div id='map' style="height: 800px">
+
+    <!-- Data and Map -->
+    <script>
+    	// Print array to console
+    	console.log(ranges);
+
+        // map
+        var map = L.map('map', {
+          center: [-27.833, 133.583],
+          zoom: 4,
+          minZoom: 5,
+          maxZoom: 16
+        });
+
+        // add tiles and attribution
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+    		// add markers for each data point
+    		for (var i = 0; i < ranges.length; i++) {
+
+    		    // popup content
+    		    var popup = "<b>Range:</b> " + ranges[i].Range + "<br>"
+    						+ "<b>Type:</b> " + ranges[i].Type + "<br>"
+    						+ "<b>Maximum Distance:</b> " + ranges[i].Max_Distance + "<br>"
+    						+ "<b>No. of Targets:</b> " + ranges[i].Targets + "<br>"
+    						+ "<b>Electronic Targets:</b> " + ranges[i].Electronic + "<br>"
+    						+ "<b>Electronic System:</b> " + ranges[i].ET_System + "<br>"
+    						+ "<b>Clubs:</b> " + ranges[i].Clubs
+
+            // add popups
+    				marker = new L.marker([ranges[i].Lat,ranges[i].Long])
+    					.bindPopup(popup)
+    					.addTo(map)
+    					.on('click', function (e) {
+    						map.setView(e.latlng, 13);}
+              /*.on('mouseover', function (e) {
+      	        this.openPopup();}*/
+    			)};
+    </script>
+  </body>
+</html>
