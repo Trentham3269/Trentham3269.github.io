@@ -5,7 +5,7 @@
     <!-- Should override IE compatibility mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Fit to device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
     <!-- Does the intranet search index pages? if so consider content -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -21,10 +21,18 @@
 
     <!-- Load ranges data from external .js file -->
     <script src="ranges.js"></script>
+
+    <style>
+      #map { position: absolute;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0; }
+    </style>
   </head>
   <body>
     <!-- Div for map -->
-    <div id='map' style="height: 800px">
+    <div id="map">
 
     <!-- Data and Map -->
     <script>
@@ -34,10 +42,15 @@
         // map
         var map = L.map('map', {
           center: [-27.833, 133.583],
-          zoom: 4,
-          minZoom: 5,
-          maxZoom: 16
+          zoom: 5
         });
+
+        /* // set southeast and northwest points
+        map.fitBounds([
+          [-44.4, 153.5],
+          [-11.1, 113.2]
+        ]); */
+
 
         // add tiles and attribution
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -60,10 +73,10 @@
     				marker = new L.marker([ranges[i].Lat,ranges[i].Long])
     					.bindPopup(popup)
     					.addTo(map)
-    					.on('click', function (e) {
-    						map.setView(e.latlng, 13);}
-              /*.on('mouseover', function (e) {
-      	        this.openPopup();}*/
+    					/*.on('click', function (e) {
+    						map.setView(e.latlng, 13);}*/
+              .on('click', function (e) {
+      	        this.openPopup();}
     			)};
     </script>
   </body>
