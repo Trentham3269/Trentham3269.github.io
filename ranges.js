@@ -7,7 +7,7 @@ var ranges =
       "State": "NSW",
       "Type": "Imperial",
       "Max_Distance": "900y",
-      "Targets": 6,
+      "Targets": "6",
       "Electronic": "No",
       "ET_System": "N/A",
       "Clubs": "Bathurst"
@@ -19,10 +19,34 @@ var ranges =
       "State": "NSW",
       "Type": "Imperial",
       "Max_Distance": "900y",
-      "Targets": 7,
+      "Targets": "7",
       "Electronic": "Yes",
       "ET_System": "Kongsberg",
       "Clubs": "BHP, Cessnock, West Wallsend"
+    },
+    {
+      "Range": "Gosford",
+      "Lat": -33.455674,
+      "Long": 151.271125,
+      "State": "NSW",
+      "Type": "Imperial/Metric",
+      "Max_Distance": "600m",
+      "Targets": "7",
+      "Electronic": "Yes",
+      "ET_System": "HEXTA",
+      "Clubs": "Gosford District"
+    },
+    {
+      "Range": "Goulburn",
+      "Lat": -34.770336,
+      "Long": 149.745637,
+      "State": "NSW",
+      "Type": "Imperial",
+      "Max_Distance": "900y",
+      "Targets": "?",
+      "Electronic": "Yes",
+      "ET_System": "OzScore",
+      "Clubs": "Goulburn"
     },
     {
       "Range": "Hornsby",
@@ -31,10 +55,22 @@ var ranges =
       "State": "NSW",
       "Type": "Metric",
       "Max_Distance": "800m",
-      "Targets": 14,
+      "Targets": "14",
       "Electronic": "Yes",
       "ET_System": "HEXTA",
       "Clubs": "Hornsby, Hornsby RSL, Manly, Roseville"
+    },
+    {
+      "Range": "Katoomba",
+      "Lat": -33.709724,
+      "Long": 150.342206,
+      "State": "NSW",
+      "Type": "Imperial/Metric",
+      "Max_Distance": "600m",
+      "Targets": "4",
+      "Electronic": "Yes",
+      "ET_System": "Silver Mountain",
+      "Clubs": "Katoomba"
     },
     {
       "Range": "Malabar",
@@ -43,22 +79,34 @@ var ranges =
       "State": "NSW",
       "Type": "Metric",
       "Max_Distance": "800m",
-      "Targets": 30,
+      "Targets": "30",
       "Electronic": "Yes",
       "ET_System": "Mixed",
       "Clubs": "Concord, Holsworthy, Port Jackson, Mosman Neutral Bay, Sydney, Yorkshire"
     },
     {
-      "Range": "Gosford",
-      "Lat": -33.455674,
-      "Long": 151.271125,
+      "Range": "Mudgee",
+      "Lat": -32.612743,
+      "Long": 149.569105,
       "State": "NSW",
-      "Type": "Mixed",
-      "Max_Distance": "600m",
-      "Targets": 7,
-      "Electronic": "Yes",
-      "ET_System": "HEXTA",
-      "Clubs": "Gosford District"
+      "Type": "Imperial/Metric",
+      "Max_Distance": "?",
+      "Targets": "?",
+      "Electronic": "No",
+      "ET_System": "N/A",
+      "Clubs": "Mudgee"
+    },
+    {
+      "Range": "Spring Ridge",
+      "Lat": -31.417000,
+      "Long": 150.262947,
+      "State": "NSW",
+      "Type": "Imperial",
+      "Max_Distance": "900y",
+      "Targets": "6",
+      "Electronic": "No",
+      "ET_System": "N/A",
+      "Clubs": "Spring Ridge"
     },
     {
       "Range": "Belmont",
@@ -67,7 +115,7 @@ var ranges =
       "State": "QLD",
       "Type": "Imperial",
       "Max_Distance": "1000y",
-      "Targets": 50,
+      "Targets": "50",
       "Electronic": "Yes",
       "ET_System": "HEXTA",
       "Clubs": "Brisbane, Brisbane Mariners, Central, Gold Coast, Pacific, Natives, University of Qld"
@@ -97,6 +145,18 @@ var ranges =
       "Clubs": "Ipswich & District"
     },
     {
+      "Range": "Mackay",
+      "Lat": -21.182147,
+      "Long": 148.992280,
+      "State": "QLD",
+      "Type": "Imperial/Metric",
+      "Max_Distance": "800m",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Mackay"
+    },
+    {
       "Range": "North Arm",
       "Lat": -26.525591,
       "Long": 152.974641,
@@ -107,6 +167,30 @@ var ranges =
       "Electronic": "Yes",
       "ET_System": "Kongsberg",
       "Clubs": "North Arm"
+    },
+    {
+      "Range": "Raglan",
+      "Lat": -23.722441,
+      "Long": 150.810624,
+      "State": "QLD",
+      "Type": "Metric",
+      "Max_Distance": "1100m",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "?"
+    },
+    {
+      "Range": "Wondai",
+      "Lat": -26.334474,
+      "Long": 151.889558,
+      "State": "QLD",
+      "Type": "Imperial",
+      "Max_Distance": "1000y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Wondai"
     },
     {
       "Range": "Bendigo",
@@ -193,6 +277,54 @@ var ranges =
       "Clubs": "Campbell Town"
     },
     {
+      "Range": "Sandford",
+      "Lat": -42.943906,
+      "Long": 147.484199,
+      "State": "TAS",
+      "Type": "?",
+      "Max_Distance": "?",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Sandford"
+    },
+    {
+      "Range": "Smithton",
+      "Lat": -40.852343,
+      "Long": 145.142564,
+      "State": "TAS",
+      "Type": "?",
+      "Max_Distance": "?",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Smithton"
+    },
+    {
+      "Range": "Coomunga",
+      "Lat": -34.673222,
+      "Long": 135.731575,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "900y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Port Lincoln"
+    },
+    {
+      "Range": "Kapunda",
+      "Lat": -34.356511,
+      "Long": 138.926480,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "1000y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Kapunda"
+    },
+    {
       "Range": "Lower Light",
       "Lat": -34.551299,
       "Long": 138.377132,
@@ -200,9 +332,105 @@ var ranges =
       "Type": "Metric",
       "Max_Distance": "900m",
       "Targets": "?",
-      "Electronic": "No",
-      "ET_System": "N/A",
-      "Clubs": "?"
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Cyclists Torrens Valley, Phoenix"
+    },
+    {
+      "Range": "Monarto",
+      "Lat": -35.146918,
+      "Long": 139.155514,
+      "State": "SA",
+      "Type": "Metric",
+      "Max_Distance": "1000m",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Murray Bridge"
+    },
+    {
+      "Range": "Mount Barker",
+      "Lat": -35.067965,
+      "Long": 138.839298,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "800y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Mount Barker"
+    },
+    {
+      "Range": "Mount Gambier",
+      "Lat": -37.951036,
+      "Long": 140.800094,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "800y",
+      "Targets": "4",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Mount Gambier"
+    },
+    {
+      "Range": "Orroroo",
+      "Lat": -32.741864,
+      "Long": 138.613150,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "1000y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Yanyarrie Orroroo"
+    },
+    {
+      "Range": "Port Pirie",
+      "Lat": -33.175304,
+      "Long": 138.040922,
+      "State": "SA",
+      "Type": "?",
+      "Max_Distance": "?",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Port Pirie"
+    },
+    {
+      "Range": "Waikerie",
+      "Lat": -34.2131667,
+      "Long": 139.959000,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "900y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Waikerie"
+    },
+    {
+      "Range": "Wallaroo",
+      "Lat": -33.939819,
+      "Long": 137.602341,
+      "State": "SA",
+      "Type": "?",
+      "Max_Distance": "?",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Wallaroo"
+    },
+    {
+      "Range": "Whyalla",
+      "Lat": -33.049234,
+      "Long": 137.549358,
+      "State": "SA",
+      "Type": "Imperial",
+      "Max_Distance": "900y",
+      "Targets": "?",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Whyalla"
     },
     {
       "Range": "Albany",
@@ -253,6 +481,18 @@ var ranges =
       "Clubs": "Busselton"
     },
     {
+      "Range": "Geraldton Greenough",
+      "Lat": -28.959219,
+      "Long": 114.732446,
+      "State": "WA",
+      "Type": "Imperial/Metric",
+      "Max_Distance": "900y",
+      "Targets": "10",
+      "Electronic": "?",
+      "ET_System": "?",
+      "Clubs": "Geraldton Greenough"
+    },
+    {
       "Range": "Meekatharra",
       "Lat": -26.576190,
       "Long": 118.488107,
@@ -289,7 +529,7 @@ var ranges =
       "Clubs": "Mandurah, Yarloop"
     },
     {
-      "Range": "Micket Creek",
+      "Range": "Darwin",
       "Lat": -12.396858,
       "Long": 130.943770,
       "State": "NT",
